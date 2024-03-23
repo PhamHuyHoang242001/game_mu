@@ -5,3 +5,231 @@ button{
     outline: none;
     border: none;
 }
+
+#wrap {
+    padding-top: 30%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.btn-slide, .btn-slide2 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 190px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #2b82fa;
+    transition: .5s;
+	margin: 5px;
+}
+
+.btn-slide2 {
+    border: 2px solid #689f38;
+}
+
+.btn-slide:hover {
+    background-color: #2b82fa;
+}
+
+.btn-slide2:hover {
+    background-color: #689f38;
+}
+
+.btn-slide:hover span.circle, .btn-slide2:hover span.circle2 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color: #2b82fa;
+}
+
+.btn-slide2:hover span.circle2 {
+    color: #689f38;
+	
+}
+
+.btn-slide, .btn-slide3 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 190px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #2b82fa;
+    transition: .5s;
+}
+
+
+.btn-slide3 {
+    border: 2px solid #689f38;
+}
+
+.btn-slide:hover {
+    background-color: #2b82fa;
+}
+
+.btn-slide3:hover {
+    background-color: #689f38;
+}
+
+.btn-slide:hover span.circle, .btn-slide3:hover span.circle3 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color: #2b82fa;
+}
+
+.btn-slide3:hover span.circle3 {
+    color: #689f38;
+	}
+
+.btn-slide:hover span.title, .btn-slide2:hover span.title2 {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn-slide:hover span.title-hover, .btn-slide2:hover span.title-hover2 {
+    opacity: 1;
+    left: 40px;
+}
+
+.btn-slide span.circle, .btn-slide2 span.circle2 {
+    display: block;
+    background-color: #2b82fa;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: -2px;
+    left: -2px;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn-slide2 span.circle2 {
+    background-color: #689f38;
+}
+
+.btn-slide span.title,
+  .btn-slide span.title-hover, .btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    position: absolute;
+    left: 50px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: #2b82fa;
+    transition: .5s;
+}
+
+.btn-slide2 span.title2,
+  .btn-slide2 span.title-hover2 {
+    color: #689f38;
+    left: 60px;
+  }
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+    left: 60px;
+    opacity: 0;
+}
+
+.btn-slide span.title-hover, .btn-slide2 span.title-hover2 {
+    color: #fff;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 979px) {
+    .details-button{
+        text-align: center;
+        margin-right: 0px;
+    }
+    .azm-facebook {
+        margin-right: 0px;
+}
+
+    
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.background-container {
+     position: relative;
+    background-image: url(img/bg12.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    margin: 0px !important;
+    padding-top: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    z-index: 10;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+#menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
+    z-index: 9999; /* Đảm bảo overlay hiển thị trên tất cả các phần tử khác */
+    display: none; /* Ban đầu ẩn */
+    color: white;
+    padding: 20px; /* Để căn giữa nội dung */
+}
+.menu-show{
+    display: none !important;
+}
